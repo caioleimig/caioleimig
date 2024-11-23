@@ -1,6 +1,12 @@
 # 👋 Olá, eu sou Caio Leimig (@caioleimig)
 
-<img src="![minhafoto](https://github.com/user-attachments/assets/19a10f87-87b8-49d0-9ac7-7b83803c6476)" alt="Foto de perfil" width="150">
+img = "![minhafoto](https://github.com/user-attachments/assets/19a10f87-87b8-49d0-9ac7-7b83803c6476)" 
+img {
+  width: 150px; /* Define a largura */
+  height: auto; /* Mantém a proporção da altura */
+  border-radius: 50%; /* (Opcional) Torna a imagem redonda */
+}
+
 
 
 ## Sobre mim
