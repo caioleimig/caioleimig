@@ -2,7 +2,8 @@
 
 # 👋 Olá, eu sou Caio Leimig (@caioleimig)
 
-<img src="https://via.placeholder.com/150" alt="Foto de perfil" style="border-radius:50%;" width="150" height="150"> 
+<img src="![minhafoto](https://github.com/user-attachments/assets/590ef458-5747-453e-afef-ca834ad01097)
+" alt="Foto de perfil" style="border-radius:50%;" width="150" height="150"> 
 
 ## Sobre mim
 🎓 Graduando em Ciência da Computação.  
