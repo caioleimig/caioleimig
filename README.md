@@ -11,6 +11,8 @@
 - Desenvolvimento de software
 - Inteligência Artificial
 - Engenharia de Dados
+- Cybersegurança
+- Sistemas da Informação
 
 ## 💼 Contato Profissional
 - 📧 **Email:** [caiolrs2005@gmail.com](mailto:caiolrs2005@gmail.com)  
