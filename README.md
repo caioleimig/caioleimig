@@ -15,7 +15,7 @@
 
 ## 💼 Contato Profissional
 - 📧 **Email:** [caiolrs2005@gmail.com](mailto:caiolrs2005@gmail.com)  
-- 🌐 **LinkedIn:** [Caio Leimig Rodrigues da Silva](https://www.linkedin.com/in/caio-leimig-rodrigues-da-silva-3544b7336/?trk=opento_sprofile_topcard)  
+- 🌐 **LinkedIn:** [Caio Leimig](https://www.linkedin.com/in/caio-leimig-rodrigues-da-silva/)  
 - 📞 **Telefone:** (81)99224-8548
 
 ## ⚡ Tecnologias que estudo
