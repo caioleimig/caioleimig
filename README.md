@@ -1,7 +1,5 @@
 # 👋 Olá, eu sou Caio Leimig (@caioleimig)
 
-<img src="https://github.com/user-attachments/assets/4e84c8e8-6063-49c7-8469-285f8ee2e6f2" alt="minhafoto" width="150">
-
 ## Sobre mim
 🎓 Graduando em Ciência da Computação na CESAR School (Segundo Semestre).  
 🚀 Interessado em áreas da tecnologia, de inovação e desenvolvimento.
