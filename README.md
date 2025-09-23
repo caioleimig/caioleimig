@@ -1,7 +1,7 @@
 # 👋 Olá, eu sou Caio Leimig (@caioleimig)
 
 ## Sobre mim
-🎓 Graduando em Ciência da Computação na CESAR School (Segundo Semestre).  
+🎓 Graduando em Ciência da Computação na CESAR School.  
 🚀 Interessado em áreas da tecnologia, de inovação e desenvolvimento.
 
 ### 🌟 Áreas de Interesse
