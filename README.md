@@ -13,7 +13,6 @@
 - Inteligência Artificial
 
 ## 🔧 Tecnologias que estudo
-> Nível acadêmico / básico
 
 ![Java](https://img.shields.io/badge/-Java-ED8B00?style=flat-square&logo=java&logoColor=white)
 ![C](https://img.shields.io/badge/-C-00599C?style=flat-square&logo=c&logoColor=white)
