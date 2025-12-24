@@ -22,11 +22,13 @@
 ![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3)
 
 ## 📂 Projetos
-📌 Repositórios acadêmicos e projetos práticos desenvolvidos durante a graduação, com foco em:
-- Lógica de programação
-- Estruturas de dados
-- Programação orientada a objetos
-- Versionamento com Git/GitHub
+📌 Repositórios acadêmicos e projetos práticos desenvolvidos durante a graduação, envolvendo:
+
+- Lógica de programação e resolução de problemas
+- Estruturas de dados básicas (listas, structs, manipulação de memória)
+- Programação Orientada a Objetos com Java
+- Desenvolvimento de projetos em C, Java e Python
+- Versionamento e colaboração utilizando Git/GitHub
 
 ## 💼 Contato
 - 📧 **Email:** [caiolrs2005@gmail.com](mailto:caiolrs2005@gmail.com)
