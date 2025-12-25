@@ -9,6 +9,7 @@
 - Engenharia de Dados
 - Análise de Dados
 - Banco de Dados
+- Big Data
 - Machine Learning
 
 ## 🔧 Tecnologias que estudo
