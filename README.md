@@ -20,7 +20,7 @@ Tenho interesse em modelagem, organização, transformação e estruturação de
 ## ⚙️ Stack técnica
 
 ### 📊 Dados e Engenharia de Dados
-- Python (Pandas, NumPy – fundamentos)
+- Python (Pandas, NumPy)
 - SQL
 - Manipulação, limpeza e transformação de dados
 - Organização e estruturação de bases
