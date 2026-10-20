@@ -51,27 +51,6 @@ aprendendo:
 
 ---
 
-### `pipeline` — Global Music DNA
-
-> Pipeline **ELT diário** que coleta os charts do Apple Music em **30 países**, guarda o dado bruto na AWS, transforma com dbt e entrega tudo num dashboard. Construído de ponta a ponta.
-
-```mermaid
-flowchart LR
-    A(["Apple Music<br/>Charts API"]):::src -->|extract · Python| B[("S3<br/>raw")]:::store
-    B -->|load| C["Athena<br/>external tables"]:::proc
-    C -->|transform · dbt| D[("staging → marts")]:::store
-    D -->|serve| E(["Streamlit<br/>dashboard"]):::out
-
-    classDef src   fill:#111827,stroke:#F59E0B,color:#F59E0B
-    classDef store fill:#1F2937,stroke:#F59E0B,color:#FFFFFF
-    classDef proc  fill:#111827,stroke:#FBBF24,color:#FFFFFF
-    classDef out   fill:#F59E0B,stroke:#F59E0B,color:#111827
-```
-
-<sub>A fonte original era a API do Spotify. Depois de problemas de autenticação, troquei a ingestão para a API pública de charts do Apple Music sem mexer no resto do pipeline.</sub>
-
----
-
 ### `projetos`
 
 <table>
