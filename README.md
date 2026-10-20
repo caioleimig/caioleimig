@@ -1,14 +1,12 @@
 <div align="center">
 
 <img alt="Caio Leimig — terminal"
-     src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=26&duration=2600&pause=700&color=F59E0B&center=true&vCenter=true&multiline=true&repeat=false&width=640&height=120&lines=%24+whoami;Caio+Leimig+%E2%80%94+Data+Engineering;Recife%2C+PE+%C2%B7+CESAR+School" />
+     src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=26&duration=2600&pause=700&color=F59E0B&center=true&vCenter=true&multiline=true&repeat=false&width=640&height=90&lines=Caio+Leimig+%E2%80%94+Data+Engineering;Recife%2C+PE+%C2%B7+CESAR+School" />
 
 <br />
 
 <a href="https://www.linkedin.com/in/caio-leimig-rodrigues-da-silva/"><img alt="LinkedIn" src="https://img.shields.io/badge/linkedin-caio--leimig-F59E0B?style=flat-square&logo=linkedin&logoColor=white&labelColor=111827" /></a>
 <a href="mailto:caiolrs2005@gmail.com"><img alt="Email" src="https://img.shields.io/badge/email-caiolrs2005@gmail.com-F59E0B?style=flat-square&logo=gmail&logoColor=white&labelColor=111827" /></a>
-<img alt="Profile views" src="https://komarev.com/ghpvc/?username=caioleimig&color=F59E0B&style=flat-square&label=profile+views" />
-
 </div>
 
 ---
