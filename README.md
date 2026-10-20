@@ -11,7 +11,7 @@
 
 ---
 
-### `~/sobre`
+### `sobre`
 
 <table>
 <tr>
@@ -51,7 +51,7 @@ aprendendo:
 
 ---
 
-### `~/pipeline` — Global Music DNA
+### `pipeline` — Global Music DNA
 
 > Pipeline **ELT diário** que coleta os charts do Apple Music em **30 países**, guarda o dado bruto na AWS, transforma com dbt e entrega tudo num dashboard. Construído de ponta a ponta.
 
@@ -72,7 +72,7 @@ flowchart LR
 
 ---
 
-### `~/projetos`
+### `projetos`
 
 <table>
 <tr>
@@ -133,7 +133,7 @@ Jogo em trio aplicando listas encadeadas, matrizes e modularização em funçõe
 
 ---
 
-### `~/stack`
+### `stack`
 
 <div align="center">
 
@@ -152,7 +152,7 @@ Jogo em trio aplicando listas encadeadas, matrizes e modularização em funçõe
 
 ---
 
-### `~/metricas`
+### `métricas`
 
 <div align="center">
 
