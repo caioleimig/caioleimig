@@ -1,108 +1,178 @@
-<!-- ============================================================ -->
-<!--  Header                                                       -->
-<!-- ============================================================ -->
-<p align="center">
-  <img width="100%" alt="Caio Leimig — Data Engineering"
-       src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:0B1120,50:134E4A,100:14B8A6&text=Caio%20Leimig&fontColor=FFFFFF&fontSize=52&fontAlignY=36&desc=Data%20Engineering%20%E2%80%A2%20Ci%C3%AAncia%20da%20Computa%C3%A7%C3%A3o%20%40%20CESAR%20School&descSize=18&descAlignY=56&animation=fadeIn" />
-</p>
+<div align="center">
 
-<p align="center">
-  <img alt="Engenharia de Dados · ELT · Modelagem"
-       src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=19&duration=3500&pause=900&color=2DD4BF&center=true&vCenter=true&width=680&lines=Engenharia+de+Dados+%E2%80%94+pipelines%2C+ELT+e+modelagem;Python+%C2%B7+SQL+%C2%B7+AWS+%C2%B7+dbt;Do+dado+bruto+ao+dado+confi%C3%A1vel+e+consult%C3%A1vel" />
-</p>
-
-<p align="center">
-  <a href="https://www.linkedin.com/in/caio-leimig-rodrigues-da-silva/" target="_blank"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-  <a href="mailto:caiolrs2005@gmail.com"><img alt="Email" src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
-  <a href="https://github.com/caioleimig" target="_blank"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
-</p>
+<img alt="Caio Leimig — terminal"
+     src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=26&duration=2600&pause=700&color=F59E0B&center=true&vCenter=true&multiline=true&repeat=false&width=640&height=120&lines=%24+whoami;Caio+Leimig+%E2%80%94+Data+Engineering;Recife%2C+PE+%C2%B7+CESAR+School" />
 
 <br />
 
-## Sobre
+<a href="https://www.linkedin.com/in/caio-leimig-rodrigues-da-silva/"><img alt="LinkedIn" src="https://img.shields.io/badge/linkedin-caio--leimig-F59E0B?style=flat-square&logo=linkedin&logoColor=white&labelColor=111827" /></a>
+<a href="mailto:caiolrs2005@gmail.com"><img alt="Email" src="https://img.shields.io/badge/email-caiolrs2005@gmail.com-F59E0B?style=flat-square&logo=gmail&logoColor=white&labelColor=111827" /></a>
+<img alt="Profile views" src="https://komarev.com/ghpvc/?username=caioleimig&color=F59E0B&style=flat-square&label=profile+views" />
 
-Estudante de Ciência da Computação na **CESAR School** (Recife, PE), construindo carreira em **Engenharia de Dados** e **Análise de Dados**. Meu interesse está no caminho que o dado percorre: da extração na fonte até virar uma tabela limpa, modelada e pronta para consulta. Gosto de pensar em ingestão, transformação, modelagem e qualidade — e de entregar isso como pipelines reprodutíveis, não como scripts soltos.
+</div>
 
-Hoje trabalho principalmente com **Python** e **SQL**, usando **AWS** (S3 + Athena) e **dbt** para montar fluxos ELT de ponta a ponta, sem deixar de lado a base de engenharia de software que vem da graduação.
+---
 
-```sql
--- models/marts/dim_developer.sql
-SELECT
-    'Caio Leimig'                                        AS nome,
-    'Data Engineering'                                   AS role,
-    'B.Sc. Ciência da Computação @ CESAR School'         AS formacao,
-    'Recife, PE — Brasil'                                AS base,
-    ARRAY['ELT pipelines', 'Modelagem de dados', 'SQL']  AS foco,
-    ARRAY['dbt', 'AWS', 'Orquestração de pipelines']     AS aprendendo_agora
-FROM {{ ref('stg_cesar_school__students') }}
-WHERE curiosidade > 0
-  AND cafe IS NOT NULL;
+### `~/sobre`
+
+<table>
+<tr>
+<td width="55%" valign="top">
+
+Estudante de **Ciência da Computação na CESAR School**, construindo carreira em **Engenharia de Dados** e **Análise de Dados**.
+
+Me interessa o caminho completo do dado: sair de uma API ou de um arquivo bruto, passar por limpeza e transformação e chegar como uma tabela modelada, documentada e pronta para alguém tomar decisão em cima dela.
+
+Trabalho principalmente com **Python** e **SQL**, usando **AWS** e **dbt** para montar pipelines ELT de ponta a ponta, apoiado na base de engenharia de software da graduação.
+
+</td>
+<td width="45%" valign="top">
+
+```yaml
+# profile.yml
+nome: Caio Leimig
+role: Data Engineer (em formação)
+formacao: Ciência da Computação
+instituicao: CESAR School
+base: Recife, PE
+
+foco:
+  - pipelines ELT
+  - modelagem de dados
+  - SQL analítico
+
+aprendendo:
+  - dbt
+  - AWS
+  - orquestração
 ```
 
-## Projeto em destaque — Global Music DNA
+</td>
+</tr>
+</table>
 
-Pipeline **ELT diário** que coleta os charts do Apple Music em **30 países**, armazena o dado bruto em um data lake na AWS, transforma com dbt e expõe os resultados em um dashboard — construído de ponta a ponta como projeto de portfólio.
+---
+
+### `~/pipeline` — Global Music DNA
+
+> Pipeline **ELT diário** que coleta os charts do Apple Music em **30 países**, guarda o dado bruto na AWS, transforma com dbt e entrega tudo num dashboard. Construído de ponta a ponta.
 
 ```mermaid
 flowchart LR
-    A["🎵 Apple Music<br/>Charts API"] -->|Python · extração diária| B[("☁️ AWS S3<br/>raw / landing")]
-    B --> C["🔎 AWS Athena<br/>tabelas externas"]
-    C -->|dbt · staging → marts| D[("📐 Modelos<br/>analíticos")]
-    D --> E["📊 Streamlit<br/>dashboard"]
+    A(["Apple Music<br/>Charts API"]):::src -->|extract · Python| B[("S3<br/>raw")]:::store
+    B -->|load| C["Athena<br/>external tables"]:::proc
+    C -->|transform · dbt| D[("staging → marts")]:::store
+    D -->|serve| E(["Streamlit<br/>dashboard"]):::out
+
+    classDef src   fill:#111827,stroke:#F59E0B,color:#F59E0B
+    classDef store fill:#1F2937,stroke:#F59E0B,color:#FFFFFF
+    classDef proc  fill:#111827,stroke:#FBBF24,color:#FFFFFF
+    classDef out   fill:#F59E0B,stroke:#F59E0B,color:#111827
 ```
 
-<sub>Decisão de projeto: a fonte original era a API do Spotify; após problemas de autenticação, migrei a ingestão para a API pública de charts do Apple Music sem alterar o restante do pipeline.</sub>
+<sub>A fonte original era a API do Spotify. Depois de problemas de autenticação, troquei a ingestão para a API pública de charts do Apple Music sem mexer no resto do pipeline.</sub>
 
-## Projetos
+---
 
-| Projeto | Visão geral |
-| :-- | :-- |
-| **Global Music DNA**<br /><sub>Python · AWS S3 · Athena · dbt · Streamlit</sub> | Pipeline ELT diário sobre os charts do Apple Music em 30 países: ingestão em Python, data lake no S3, consultas via Athena, transformações modeladas em dbt e visualização em Streamlit. |
-| **Autocar BD**<br /><sub>Java · JavaFX · MySQL · JDBC</sub> | Sistema de gestão de locação de veículos, feito em trio para Modelagem de Banco de Dados: modelo relacional próprio, cadastro de clientes e veículos, registro de locações e devoluções e consulta de histórico persistido em MySQL. |
-| **[rota](https://github.com/gabrielfranca10/rota-fccpd)**<br /><sub>Python · threads · stdlib</sub> | Núcleo de despacho de pedidos de delivery com concorrência baseada em threads, usando só a biblioteca padrão. Projeto em equipe de Computação Concorrente, Paralela e Distribuída, com roadmap de quatro entregas. |
-| **EDA — Online Food Delivery**<br /><sub>Python · Pandas · Google Colab</sub> | Análise exploratória do Online Food Ordering Dataset (Kaggle): limpeza, perfil das variáveis, distribuições e relações entre atributos de clientes e pedidos. |
+### `~/projetos`
 
-<details>
-<summary><b>Mais trabalhos</b> — jogos e disciplinas de base</summary>
-<br />
+<table>
+<tr>
+<td width="50%" valign="top">
 
-- **[Frevo Runner](https://github.com/yan791/Frevo_Runner)** — endless runner inspirado no Carnaval de Olinda, em C com Raylib. Atuei em refatoração do código, fluxo de Git da equipe e apresentação.
-- **Cosmic Blaster** — jogo em C/Raylib feito em trio para Programação Imperativa e Funcional, aplicando listas encadeadas, matrizes e modularização em funções.
+#### 🎵 Global Music DNA
+`Python` `S3` `Athena` `dbt` `Streamlit`
 
-</details>
+Pipeline ELT diário sobre os charts musicais de 30 países, do data lake ao dashboard.
 
-## Stack técnica
+</td>
+<td width="50%" valign="top">
 
-| Área | Tecnologias |
-| :-- | :-- |
-| **Linguagens** | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![SQL](https://img.shields.io/badge/SQL-336791?style=flat-square&logo=postgresql&logoColor=white) ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white) ![C](https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white) |
-| **Dados & Análise** | ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white) ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white) ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white) ![Google Colab](https://img.shields.io/badge/Colab-F9AB00?style=flat-square&logo=googlecolab&logoColor=white) |
-| **Engenharia de Dados & Cloud** | ![AWS S3](https://img.shields.io/badge/AWS%20S3-569A31?style=flat-square&logo=amazons3&logoColor=white) ![AWS Athena](https://img.shields.io/badge/AWS%20Athena-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white) ![dbt](https://img.shields.io/badge/dbt-FF694B?style=flat-square&logo=dbt&logoColor=white) ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white) |
-| **Bancos de dados** | ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white) ![JDBC](https://img.shields.io/badge/JDBC-ED8B00?style=flat-square&logo=openjdk&logoColor=white) |
-| **Ferramentas** | ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white) ![Linux](https://img.shields.io/badge/Ubuntu-E95420?style=flat-square&logo=ubuntu&logoColor=white) ![Obsidian](https://img.shields.io/badge/Obsidian-7C3AED?style=flat-square&logo=obsidian&logoColor=white) |
+#### 🚗 Autocar BD
+`Java` `JavaFX` `MySQL` `JDBC`
 
-## Objetivo
+Sistema de locação de veículos com modelo relacional próprio: clientes, frota, locações, devoluções e histórico.
 
-Atuar como **Engenheiro de Dados**, projetando pipelines confiáveis, modelando dados para análise e garantindo que a informação chegue limpa, documentada e no tempo certo a quem precisa dela.
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 
-## GitHub Analytics
+#### 🛵 [rota](https://github.com/gabrielfranca10/rota-fccpd)
+`Python` `threads` `stdlib`
 
-<p align="center">
-  <img height="165" alt="GitHub stats"
-       src="https://github-readme-stats.vercel.app/api?username=caioleimig&show_icons=true&hide_rank=true&hide=stars&hide_border=true&border_radius=8&bg_color=0D1117&title_color=2DD4BF&icon_color=2DD4BF&text_color=C9D1D9" />
-  <img height="165" alt="Linguagens mais usadas"
-       src="https://github-readme-stats.vercel.app/api/top-langs/?username=caioleimig&layout=compact&langs_count=8&hide_border=true&border_radius=8&bg_color=0D1117&title_color=2DD4BF&text_color=C9D1D9" />
-</p>
+Núcleo concorrente de despacho de pedidos de delivery, feito em equipe para Computação Concorrente, Paralela e Distribuída.
 
-<p align="center">
-  <img alt="Contribution streak"
-       src="https://streak-stats.demolab.com?user=caioleimig&hide_border=true&border_radius=8&background=0D1117&stroke=30363D&ring=2DD4BF&fire=2DD4BF&currStreakLabel=2DD4BF&currStreakNum=FFFFFF&sideNums=FFFFFF&sideLabels=C9D1D9&dates=8B949E" />
-</p>
+</td>
+<td width="50%" valign="top">
 
-<!-- ============================================================ -->
-<!--  Footer                                                       -->
-<!-- ============================================================ -->
-<p align="center">
-  <img width="100%" alt=""
-       src="https://capsule-render.vercel.app/api?type=waving&height=110&section=footer&color=0:14B8A6,50:134E4A,100:0B1120" />
-</p>
+#### 📈 EDA — Online Food Delivery
+`Python` `Pandas` `Colab`
+
+Análise exploratória de pedidos online: limpeza, perfil das variáveis, distribuições e relações entre atributos.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+#### 🎭 [Frevo Runner](https://github.com/yan791/Frevo_Runner)
+`C` `Raylib`
+
+Endless runner inspirado no Carnaval de Olinda. Atuei em refatoração, fluxo de Git e apresentação.
+
+</td>
+<td width="50%" valign="top">
+
+#### 🚀 Cosmic Blaster
+`C` `Raylib`
+
+Jogo em trio aplicando listas encadeadas, matrizes e modularização em funções.
+
+</td>
+</tr>
+</table>
+
+---
+
+### `~/stack`
+
+<div align="center">
+
+<img alt="Stack" src="https://skillicons.dev/icons?i=py,java,c,mysql,aws,git,github,linux,ubuntu,obsidian&theme=dark&perline=10" />
+
+<br /><br />
+
+![Pandas](https://img.shields.io/badge/Pandas-111827?style=for-the-badge&logo=pandas&logoColor=F59E0B)
+![NumPy](https://img.shields.io/badge/NumPy-111827?style=for-the-badge&logo=numpy&logoColor=F59E0B)
+![dbt](https://img.shields.io/badge/dbt-111827?style=for-the-badge&logo=dbt&logoColor=F59E0B)
+![Athena](https://img.shields.io/badge/Athena-111827?style=for-the-badge&logo=amazonwebservices&logoColor=F59E0B)
+![Streamlit](https://img.shields.io/badge/Streamlit-111827?style=for-the-badge&logo=streamlit&logoColor=F59E0B)
+![Jupyter](https://img.shields.io/badge/Jupyter-111827?style=for-the-badge&logo=jupyter&logoColor=F59E0B)
+
+</div>
+
+---
+
+### `~/metricas`
+
+<div align="center">
+
+<img height="160" alt="GitHub stats" src="https://github-readme-stats.vercel.app/api?username=caioleimig&show_icons=true&hide_rank=true&hide_border=true&bg_color=111827&title_color=F59E0B&icon_color=F59E0B&text_color=E5E7EB" />
+<img height="160" alt="Linguagens" src="https://github-readme-stats.vercel.app/api/top-langs/?username=caioleimig&layout=donut&langs_count=6&hide_border=true&bg_color=111827&title_color=F59E0B&text_color=E5E7EB" />
+
+<img width="100%" alt="Atividade" src="https://github-readme-activity-graph.vercel.app/graph?username=caioleimig&bg_color=111827&color=E5E7EB&line=F59E0B&point=FFFFFF&area=true&area_color=F59E0B&hide_border=true" />
+
+</div>
+
+---
+
+<div align="center">
+
+```sql
+SELECT * FROM oportunidades WHERE area = 'dados';
+```
+
+<sub>Obrigado pela visita ⚡</sub>
+
+</div>
